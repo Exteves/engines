@@ -12,3 +12,50 @@
     }
   }
 }
+[theater] {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #282828;
+  margin-top: 100%;
+  animation-iteration-count: 1;
+  animation: pulling 10s linear;
+  animation-fill-mode: forwards;
+}
+[line] {
+  height: 100vh;
+  position: absolute;
+  width: 3%;
+  animation: pullingLines 10s linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 54px 38px;
+  &[line="1"] {
+    left: 22%;
+  }
+  &[line="2"] {
+    right: 22%;
+  }
+}
+
+
+@keyframes pulling {
+  from {
+    margin-top: 100vh;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes pullingLines {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: -100vh;
+  }
+}
