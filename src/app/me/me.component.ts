@@ -12,4 +12,8 @@ export class MeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  track(event) {
+    console.log(event);
+  }
+
 }
