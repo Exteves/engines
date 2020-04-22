@@ -1,90 +1,12 @@
 [engineering] {
   display: flex;
   flex-direction: column;
-  app-avatar{
-    &:first-child{
-      margin-left: 9rem;
-      margin-bottom: -2.5rem;
-    }
-    &:last-child{
-      margin-top: -5rem;
-      margin-left: 6rem;
-    }
-  }
 }
 [theater] {
   overflow: auto;
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-  margin-top: 100%;
-  animation-iteration-count: 1;
-  animation: pulling 4s linear;
-  animation-delay: .5s;
-  animation-fill-mode: forwards;
+  background-color: #282828;
   z-index: 9;
-}
-[bar] {
-  width: 10vw;
-  height: 100vh;
-  position: absolute;
-  background-color: #ffffff;
-  margin-top: 100%;
-  animation-iteration-count: 1;
-  animation: pulling 4s linear;
-  animation-fill-mode: forwards;
-  opacity: .1;
-  z-index: 999;
-  &[bar="1"] {
-    margin-left: 15%;
-  }
-  &[bar="2"] {
-    margin-left: 35%;
-  }
-  &[bar="3"] {
-    margin-left: 55%;
-  }
-  &[bar="4"] {
-    margin-left: 75%;
-  }
-}
-[line] {
-  height: 100vh;
-  position: absolute;
-  width: 3%;
-  animation: pullingLines 4s linear;
-  animation-delay: .5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
-    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
-    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
-    background-size: 54px 38px;
-  &[line="1"] {
-    left: 22%;
-  }
-  &[line="2"] {
-    right: 22%;
-  }
-}
-
-
-@keyframes pulling {
-  from {
-    margin-top: 100vh;
-  }
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes pullingLines {
-  from {
-    margin-top: 0;
-  }
-  to {
-    margin-top: -100vh;
-  }
 }

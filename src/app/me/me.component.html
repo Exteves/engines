@@ -1,12 +1,6 @@
-<div wrapper  appTrackScroll (scrollY)="track($event)">  
-  <div line="1"></div>
-  <div line="2"></div>
+<div wrapper>  
   <div theater>
     <app-content></app-content>
-  </div>
-  <div engineering>
-    <app-avatar color="#282828" [size]="5" [speed]="'4s'" delay=".25s"></app-avatar>
-    <app-avatar color="#282828" [size]="10" [speed]="'4s'" [direction]="'reverse'" delay=".3s"></app-avatar>
-    <app-avatar color="#282828" [size]="15" [speed]="'4s'" delay=".4s"></app-avatar>
+    <app-progress></app-progress>
   </div>
 </div>
